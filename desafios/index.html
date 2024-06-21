@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Introdução ao HTML Básico</title>
+  </head>
+  <body>
+    <header>
+      <h1>Introdução ao HTML Básico</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#oque-e-html">O Que é HTML?</a></li>
+        <li>
+          <a href="#estrutura-basica">Estrutura Básica de um Documento HTML</a>
+        </li>
+        <li><a href="#elementos-tags">Elementos e Tags HTML</a></li>
+        <li><a href="#atributos">Atributos de Tags</a></li>
+        <li><a href="#formatacao-texto">Formatação de Texto</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#links-imagens">Links e Imagens</a></li>
+        <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#formularios">Formulários</a></li>
+        <li><a href="#comentarios">Comentários</a></li>
+        <li><a href="#boas-praticas">Boas Práticas</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="oque-e-html">
+        <h2>O Que é HTML?</h2>
+        <p>
+          HTML (HyperText Markup Language) é a linguagem padrão usada para criar
+          e estruturar páginas na web. Ele permite definir a estrutura de um
+          documento web através de elementos e tags que delimitam o conteúdo.
+        </p>
+      </section>
+
+      <section id="estrutura-basica">
+        <h2>Estrutura Básica de um Documento HTML</h2>
+        <p>
+          Um documento HTML começa com a declaração
+          <code>&lt;!DOCTYPE html&gt;</code> que define o tipo de documento. A
+          estrutura básica é composta pelas seguintes tags:
+        </p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;p&gt;Este é o meu primeiro documento HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <section id="elementos-tags">
+        <h2>Elementos e Tags HTML</h2>
+        <p>
+          Tags são usadas para marcar o início e o fim de um elemento. A maioria
+          das tags tem uma tag de abertura <code>&lt;tag&gt;</code> e uma tag de
+          fechamento <code>&lt;/tag&gt;</code>. Alguns elementos comuns incluem:
+        </p>
+        <ul>
+          <li>
+            <code>&lt;h1&gt; a &lt;h6&gt;</code>: Títulos de diferentes níveis.
+          </li>
+          <li><code>&lt;p&gt;</code>: Parágrafo.</li>
+          <li><code>&lt;a&gt;</code>: Link.</li>
+          <li><code>&lt;img&gt;</code>: Imagem.</li>
+          <li>
+            <code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code>: Listas não
+            ordenadas e ordenadas.
+          </li>
+        </ul>
+      </section>
+
+      <section id="atributos">
+        <h2>Atributos de Tags</h2>
+        <p>
+          Tags podem ter atributos que fornecem informações adicionais sobre o
+          elemento. Atributos são definidos na tag de abertura e consistem em um
+          nome e um valor, como <code>href</code> em uma tag de link:
+        </p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Visite o Exemplo&lt;/a&gt;</code></pre>
+      </section>
+
+      <section id="formatacao-texto">
+        <h2>Formatação de Texto</h2>
+        <p>HTML permite a formatação de texto com diversas tags, tais como:</p>
+        <ul>
+          <li>
+            <code>&lt;b&gt;</code> ou <code>&lt;strong&gt;</code>: Texto em
+            negrito.
+          </li>
+          <li>
+            <code>&lt;i&gt;</code> ou <code>&lt;em&gt;</code>: Texto em itálico.
+          </li>
+          <li><code>&lt;u&gt;</code>: Texto sublinhado.</li>
+        </ul>
+      </section>
+
+      <section id="listas">
+        <h2>Listas</h2>
+        <p>
+          Listas podem ser não ordenadas ou ordenadas. Elas são compostas por
+          itens de lista (<code>&lt;li&gt;</code>).
+        </p>
+        <h3>Lista Não Ordenada:</h3>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <h3>Lista Ordenada:</h3>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      </section>
+
+      <section id="links-imagens">
+        <h2>Links e Imagens</h2>
+        <p>Links e imagens são elementos essenciais em HTML.</p>
+        <h3>Link:</h3>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Clique aqui&lt;/a&gt;</code></pre>
+        <h3>Imagem:</h3>
+        <pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+      </section>
+
+      <section id="tabelas">
+        <h2>Tabelas</h2>
+        <p>Tabelas são usadas para exibir dados tabulares.</p>
+        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Idade&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;João&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Maria&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      </section>
+
+      <section id="formularios">
+        <h2>Formulários</h2>
+        <p>Formulários permitem a entrada de dados pelo usuário.</p>
+        <pre><code>&lt;form action="/enviar-dados" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+      </section>
+
+      <section id="comentarios">
+        <h2>Comentários</h2>
+        <p>
+          Comentários em HTML são ignorados pelo navegador e são usados para
+          deixar notas no código.
+        </p>
+        <pre><code>&lt;!-- Este é um comentário --&gt;</code></pre>
+      </section>
+
+      <section id="boas-praticas">
+        <h2>Boas Práticas</h2>
+        <ul>
+          <li>
+            Usar tags semânticas: Tags como <code>&lt;header&gt;</code>,
+            <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, e
+            <code>&lt;section&gt;</code> melhoram a acessibilidade e SEO.
+          </li>
+          <li>
+            Validar o código: Ferramentas como o W3C Validator ajudam a garantir
+            que o HTML está correto.
+          </li>
+          <li>
+            Manter um código limpo e organizado: Facilita a manutenção e
+            compreensão do código.
+          </li>
+        </ul>
+      </section>
+
+      <section id="conclusao">
+        <h2>Conclusão</h2>
+        <p>
+          HTML é a base da criação de páginas web. Compreender os conceitos
+          básicos é o primeiro passo para se tornar um desenvolvedor web.
+          Praticar a criação de páginas simples e explorar diferentes elementos
+          e atributos é fundamental para o aprendizado.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
